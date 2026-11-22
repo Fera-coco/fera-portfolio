@@ -161,10 +161,10 @@ function About() {
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_1.1fr]">
         <div>
           <p className="eyebrow">About</p>
-          <h2 className="mt-2 font-serif text-5xl md:text-6xl">From radio studios to React.</h2>
+          <h2 className="mt-2 font-serif text-5xl md:text-6xl">Engineer's brain, designer's eye.</h2>
           <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-ink/85">
-            <p>I'm Segun-Babs Peace Oluwaferanmi, but everyone calls me Fera. I started out in electrical engineering, working in broadcast engineering and IT support at radio stations in Ibadan and Ado-Ekiti.</p>
-            <p>That pulled me into computers, then into Computer Science, and now into designing and building for the web. I like work where the research, the design and the code all come from the same head.</p>
+            <p>I'm Segun-Babs Peace Oluwaferanmi, but everyone calls me Fera. I'm a frontend developer and UI/UX designer with a diploma in Electrical Engineering and a B.Sc. in Computer Science.</p>
+            <p>Along the way I've worked in broadcast engineering and IT support at radio stations in Ibadan and Ado-Ekiti, and as a front-end and full-stack intern in Cotonou. I like work where the research, the design and the code all come from the same head.</p>
             <p>Today I run Fera's Studio, where I build websites for small businesses, and I'm studying product management at TS Academy.</p>
           </div>
           <div className="mt-8 rotate-[-1.5deg] rounded-2xl border-2 border-ink bg-sun p-5 shadow-[5px_5px_0_#1E1C1A]">

@@ -96,7 +96,7 @@ export function DragStack({ cards }: { cards: { key: string; img: string; label:
         </div>
       ))}
       <span className="absolute -right-2 top-2 z-10 rotate-12 rounded-full border-2 border-ink bg-lilac px-3 py-1 text-sm font-bold" aria-hidden>
-        {moved ? "Tidy freak? Same." : "Psst, drag us"}
+        {moved ? "You found the fun part ✨" : "Psst, drag us"}
       </span>
       {moved && (
         <button
