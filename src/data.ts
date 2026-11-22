@@ -20,8 +20,8 @@ const STUDIO = "https://ferasportfolio.vercel.app";
 
 export const projects: Project[] = [
   {
-    slug: "ilemi",
-    title: "Ilémi Homes",
+    slug: "brightdoor",
+    title: "Brightdoor Homes",
     year: "2026",
     tracks: ["build", "design"],
     kind: "Real estate website · Concept",
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     stack: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     cover: import.meta.env.BASE_URL + "work/ilemi-cover.webp",
     tone: "bg-mint",
-    links: [{ label: "Open the site", href: `${STUDIO}/concepts/ilemi` }],
+    links: [{ label: "Open the site", href: `${STUDIO}/concepts/brightdoor` }],
   },
   {
     slug: "sweetsips",

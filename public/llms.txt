@@ -3,7 +3,7 @@
 > Frontend developer and UI/UX designer based in Cotonou, Benin Republic, working with clients in Nigeria, Benin and beyond. Designs in Figma and builds with React, TypeScript, Next.js, Tailwind CSS, Supabase and Firebase. Open to freelance projects and full-time roles.
 
 ## Work
-- [Ilémi Homes](https://ferasportfolio.vercel.app/concepts/ilemi): A concept Lagos real estate website with the full move-in cost on every listing, title-document checks, a price map, inspection booking and an owner dashboard.
+- [Brightdoor Homes](https://ferasportfolio.vercel.app/concepts/brightdoor): A concept Lagos real estate website with the full move-in cost on every listing, title-document checks, a price map, inspection booking and an owner dashboard.
 - [SweetSips](https://sweetsips-landing-page-project.vercel.app/): An animated brand website and ordering experience for a student-run parfait and smoothie brand in Cotonou.
 - [Gracelink Empire](https://ferasportfolio.vercel.app/work/gracelink-empire): An e-commerce website for a Nigerian hair business with guest checkout, order tracking and an owner dashboard.
 - [ReadSmartly](https://readsmartly.vercel.app/): An AI-assisted study companion web app, built as a Computer Science thesis.
