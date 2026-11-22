@@ -154,6 +154,5 @@ export const skills = {
 
 export const contact = {
   email: "ferrababs@gmail.com",
-  github: "https://github.com/Fera-coco",
   studio: STUDIO,
 };

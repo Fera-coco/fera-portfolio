@@ -218,7 +218,6 @@ function Contact() {
       <a href={`mailto:${contact.email}`} className="mt-8 inline-block rounded-full border-2 border-ink bg-sun px-8 py-4 text-lg font-bold shadow-[5px_5px_0_#1E1C1A] transition hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0_#1E1C1A]">{contact.email}</a>
       <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm font-bold">
         <CopyEmail email={contact.email} />
-        <a href={contact.github} target="_blank" rel="noopener noreferrer" className="rounded-full border-2 border-ink bg-paper px-4 py-2 hover:bg-pink">GitHub ↗</a>
         <a href={contact.studio} target="_blank" rel="noopener noreferrer" className="rounded-full border-2 border-ink bg-paper px-4 py-2 hover:bg-mint">Fera's Studio ↗</a>
       </div>
     </section>
