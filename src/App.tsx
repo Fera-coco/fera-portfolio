@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { contact, education, experience, projects, skills, type Project, type Track } from "./data";
+import { CopyEmail, CotonouClock, CursorSticker, DragStack, Marquee, Reveal } from "./fun";
 
 const cx = (...c: (string | false | undefined)[]) => c.filter(Boolean).join(" ");
 
@@ -10,6 +11,7 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <Marquee items={["React", "UX research", "TypeScript", "Figma", "Next.js", "Prototyping", "Tailwind CSS", "Design systems", "Supabase", "User flows", "Framer Motion", "Accessibility"]} />
         <Work />
         <Skills />
         <About />
@@ -18,7 +20,6 @@ export default function App() {
       <footer className="border-t-2 border-ink px-5 py-8 text-sm md:px-10">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3">
           <p>© 2026 Segun-Babs Peace Oluwaferanmi (Fera)</p>
-          <p className="text-muted">Designed and built by me, in Cotonou.</p>
         </div>
       </footer>
     </>
@@ -59,20 +60,9 @@ function Hero() {
           <a href="#work" className="rounded-full border-2 border-ink bg-sun px-6 py-3 font-bold shadow-[4px_4px_0_#1E1C1A] transition hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0_#1E1C1A]">See my work</a>
           <a href={`mailto:${contact.email}`} className="rounded-full border-2 border-ink bg-paper px-6 py-3 font-bold transition hover:bg-pink">Email me</a>
         </div>
+        <p className="mt-6 text-[15px] text-muted"><CotonouClock /></p>
       </div>
-      <div className="relative mx-auto h-[340px] w-full max-w-[460px] sm:h-[400px]" aria-hidden>
-        {stack.map((p, i) => (
-          <div
-            key={p.slug}
-            className={cx("absolute w-[78%] rounded-2xl border-2 border-ink p-2 shadow-[6px_6px_0_#1E1C1A]", p.tone)}
-            style={{ left: `${[0, 22, 8][i]}%`, top: `${[0, 30, 58][i]}%`, transform: `rotate(${[-6, 4, -2][i]}deg)`, zIndex: i }}
-          >
-            <img src={p.cover} alt="" className="aspect-[16/10] w-full rounded-lg border-2 border-ink object-cover object-top" />
-            <p className="px-1 pt-1.5 text-[13px] font-bold">{p.title}</p>
-          </div>
-        ))}
-        <span className="absolute -right-2 top-2 z-10 rotate-12 rounded-full border-2 border-ink bg-lilac px-3 py-1 text-sm font-bold">7 projects</span>
-      </div>
+      <DragStack cards={stack.map((p) => ({ key: p.slug, img: p.cover, label: p.title, tone: p.tone }))} />
     </section>
   );
 }
@@ -97,7 +87,7 @@ function Work() {
           </div>
         </div>
         <div className="mt-12 space-y-16 md:space-y-24">
-          {shown.map((p, i) => <ProjectRow key={p.slug} p={p} flip={i % 2 === 1} />)}
+          {shown.map((p, i) => <Reveal key={p.slug}><ProjectRow p={p} flip={i % 2 === 1} /></Reveal>)}
         </div>
       </div>
     </section>
@@ -108,9 +98,13 @@ function ProjectRow({ p, flip }: { p: Project; flip: boolean }) {
   const main = p.links[0];
   return (
     <article className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
-      <a href={main.href} target="_blank" rel="noopener noreferrer" className={cx("group block rounded-3xl border-2 border-ink p-3 shadow-[8px_8px_0_#1E1C1A] transition hover:-translate-y-1 md:p-5", p.tone, flip && "md:order-2")} aria-label={`${main.label}: ${p.title}`}>
+      <div className={cx(flip && "md:order-2")}>
+      <CursorSticker label={main.label + " ↗"}>
+      <a href={main.href} target="_blank" rel="noopener noreferrer" className={cx("group block rounded-3xl border-2 border-ink p-3 shadow-[8px_8px_0_#1E1C1A] transition hover:-translate-y-1 hover:rotate-[-1deg] md:p-5", p.tone)} aria-label={`${main.label}: ${p.title}`}>
         <img src={p.cover} alt={`${p.title} screenshot`} loading="lazy" className="aspect-[16/10] w-full rounded-xl border-2 border-ink bg-paper object-cover object-top transition group-hover:scale-[1.01]" />
       </a>
+      </CursorSticker>
+      </div>
       <div>
         <div className="flex flex-wrap items-center gap-2 text-[13px] font-semibold">
           <span className="text-muted">{p.year}</span>
@@ -173,6 +167,14 @@ function About() {
             <p>That pulled me into computers, then into Computer Science, and now into designing and building for the web. I like work where the research, the design and the code all come from the same head.</p>
             <p>Today I run Fera's Studio, where I build websites for small businesses, and I'm studying product management at TS Academy.</p>
           </div>
+          <div className="mt-8 rotate-[-1.5deg] rounded-2xl border-2 border-ink bg-sun p-5 shadow-[5px_5px_0_#1E1C1A]">
+            <p className="eyebrow !text-ink">Currently</p>
+            <ul className="mt-3 space-y-2 text-[15px]">
+              <li>🛠️ <span className="font-bold">Building</span> an online store for a Nigerian hair brand</li>
+              <li>📚 <span className="font-bold">Learning</span> product management at TS Academy</li>
+              <li>🎀 <span className="font-bold">Running</span> the Open Call: free websites for small businesses</li>
+            </ul>
+          </div>
         </div>
         <div className="space-y-8">
           <div>
@@ -215,6 +217,7 @@ function Contact() {
       <p className="mx-auto mt-5 max-w-md text-lg text-ink/80">Hiring, or need a website or app designed and built? Send me a message.</p>
       <a href={`mailto:${contact.email}`} className="mt-8 inline-block rounded-full border-2 border-ink bg-sun px-8 py-4 text-lg font-bold shadow-[5px_5px_0_#1E1C1A] transition hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[3px_3px_0_#1E1C1A]">{contact.email}</a>
       <div className="mt-6 flex flex-wrap justify-center gap-3 text-sm font-bold">
+        <CopyEmail email={contact.email} />
         <a href={contact.github} target="_blank" rel="noopener noreferrer" className="rounded-full border-2 border-ink bg-paper px-4 py-2 hover:bg-pink">GitHub ↗</a>
         <a href={contact.studio} target="_blank" rel="noopener noreferrer" className="rounded-full border-2 border-ink bg-paper px-4 py-2 hover:bg-mint">Fera's Studio ↗</a>
       </div>

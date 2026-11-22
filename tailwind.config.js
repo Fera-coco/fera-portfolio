@@ -15,6 +15,7 @@ export default {
         pink: "#FF70A6",
         lilac: "#B79CFF",
       },
+      keyframes: { marquee: { from: { transform: "translateX(0)" }, to: { transform: "translateX(-50%)" } } },
       fontFamily: {
         serif: ['"Instrument Serif"', "Georgia", "serif"],
         sans: ['"DM Sans Variable"', "system-ui", "sans-serif"],

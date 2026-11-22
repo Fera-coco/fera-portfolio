@@ -1,0 +1,29 @@
+# Fera (Segun-Babs Peace Oluwaferanmi)
+
+> Frontend developer and UI/UX designer based in Cotonou, Benin Republic, working with clients in Nigeria, Benin and beyond. Designs in Figma and builds with React, TypeScript, Next.js, Tailwind CSS, Supabase and Firebase. Open to freelance projects and full-time roles.
+
+## Work
+- [Ilémi Homes](https://ferasportfolio.vercel.app/concepts/ilemi): A concept Lagos real estate website with the full move-in cost on every listing, title-document checks, a price map, inspection booking and an owner dashboard.
+- [SweetSips](https://sweetsips-landing-page-project.vercel.app/): An animated brand website and ordering experience for a student-run parfait and smoothie brand in Cotonou.
+- [Gracelink Empire](https://ferasportfolio.vercel.app/work/gracelink-empire): An e-commerce website for a Nigerian hair business with guest checkout, order tracking and an owner dashboard.
+- [ReadSmartly](https://readsmartly.vercel.app/): An AI-assisted study companion web app, built as a Computer Science thesis.
+- [WE-GO](https://ferasportfolio.vercel.app/work/we-go): A mobile app design for finding company for plans and outings.
+- [Compare Before Buying](https://ferasportfolio.vercel.app/work/temu-product-comparison): A product comparison feature design for Temu.
+- [Fera's Studio](https://ferasportfolio.vercel.app): A bilingual exhibition-style studio website with a 3D gallery and a private back office.
+
+## Experience
+- Founder, Fera's Studio (2026 to now): websites for small businesses in Nigeria and Benin
+- IT Intern, front-end and full stack, Techverse Global, Cotonou (Jun to Sep 2025)
+- Student Information Officer, St. Louis Africa University (Jun to Aug 2024)
+- IT Support and Studio Assistant, Fresh FM, Ado-Ekiti (Jan to Jun 2023)
+- SIWES Intern, Broadcast Engineering, Splash FM, Ibadan (Apr to Jun 2021)
+
+## Education
+- B.Sc. Computer Science, ESTAM University (2023 to 2026)
+- Diploma, Electrical Engineering, Federal Polytechnic Ado-Ekiti (2019 to 2022)
+- Product Management, TS Academy (in progress)
+
+## Contact
+- Email: ferrababs@gmail.com
+- GitHub: https://github.com/Fera-coco
+- Studio: https://ferasportfolio.vercel.app
